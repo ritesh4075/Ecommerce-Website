@@ -40,6 +40,10 @@ public class ProductService {
     public void deleteProduct(Integer id){
         repo.deleteById(id);
     }
+    public List<Product> searchProducts(String keyword){
+        // System.out.println(keyword);
+        return repo.searchProducts(keyword);
+    }
     
 
 }
